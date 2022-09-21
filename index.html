@@ -4,9 +4,39 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./styles/style.css">
 	<title>Chat Homework 39 </title>
 </head>
 <body>
+
+	<div class="container">
+		<header class="header">
+			<input type="text" id="input-name" placeholder="Name User">
+			<textarea id="message" cols="30" rows="10" placeholder="Message"></textarea>
+			<button id="btn">SEND</button>
+		</header>
+
+		<div class="posts">
+
+			<div class="post">
+				<div class="post__header">
+					<p class="author"> 
+						<span>Author:</span>
+						Cringehanicus
+					</p>
+					<p class="date"> 
+						<span>Date:</span>
+						2022-09-21T10:02:14.376Z
+					</p>
+
+				</div>
+				
+				<p class="message">test</p>
+			</div>
+
+		</div>
+
+	</div>
 	
 	<script src="./js/main.js"></script>
 </body>
@@ -14,6 +44,23 @@
 
 <!-- 
 
+	Минимальная верстка
+		создать textarea для ввода сообщений
+		создать кнопку для отправки данных на сервер
+		создать инпут для автора, в нем записывается имя автора
 	
+	Отправить сообщение:
+		нужна функция которая принимает текст и имя автора
+		после клика на кнопку функция отправляет данные на сервер
+	
+	Получение сообщений с сервера:
+		функция которая делает GET запрос на сервер
+		после получает массив со всеми сообщениями 
+		в интервале проверять север, если в нем есть новые сообщения то получать их
+
+	Отрисовка полученных сообщений на странице:
+		полученные сообщения вывести на экран
+		новое сообщения добавлять на экран
+		
 
  -->
